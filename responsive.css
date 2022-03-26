@@ -1,0 +1,200 @@
+/*mobilephone*/
+
+@media(max-width:480px){
+
+  .container{
+    width: 100%;
+  }
+
+  .header-left img{
+    height: 90px;
+    float: left;
+  }
+
+  .header-right{
+    padding: 45px 10px 0 0;
+  }
+
+  .header-right img{
+    width: 25px;
+    height: 25px;
+    opacity: 0.6;
+    padding: 0 3px;
+  }
+
+  .nav-list{
+    display: none;
+  }
+
+  .table{
+    padding-top: 25px;
+  }
+
+  .table td{
+    border:solid 1px #d9d9d9;
+    text-align: center;
+    width: 50%;
+    padding: 10px 0;
+  }
+
+  .table a{
+    letter-spacing: 2px;
+    display: block;
+  }
+
+
+  .table-bottom td{
+    border:solid 1px #d9d9d9;
+    text-align: center;
+    width: 50%;
+    padding: 10px 0;
+  }
+
+  .table-bottom a{
+    letter-spacing: 2px;
+    display: block;
+  }
+
+  .mainimg{
+    display: none;
+  }
+
+  .mainimg2{
+    width: 90%;
+  }
+
+  .top-wrapper{
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .contents{
+    display: block;
+  }
+
+  .main-logo{
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 6px;
+    opacity: 0.6;
+    font-weight: 100;
+    padding: 70px 0 50px 0;
+  }
+
+  /*ここからservice*/
+
+  .service-contents{
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .service-contents img{
+    padding: 10px 0 15px 0;
+  }
+
+  .service-contents1{
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .service-contents1 img{
+    padding: 10px 0 15px 0;
+  }
+
+   /*ここからwork*/
+
+  .work-wrapper{
+    padding-top: 30px;
+  }
+
+
+  .work-contents1{
+    display:block;
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  .work-contents2{
+    display:block;
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  .info1{
+    padding: 10px 0 0 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .info{
+    padding: 50px 0 0 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .moreinfo-wrapper p{
+    padding-top: 30px;
+  }
+
+  .moreinfo-menu img{
+    width: 37px;
+  }
+
+    /*ここからshop*/
+
+  .shop-wrapper{
+    padding-top: 20px;
+  }
+
+  .shop-contents1{
+    display: block;
+    padding-top: 0px;
+  }
+
+  .shop-contents2{
+    display: block;
+    padding-top: 0px;
+  }
+
+  .shop-info1{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  .shop-info{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .shop-btn{
+    padding-top: 35px;
+  }
+
+
+
+
+}
+
+
+/*PC and Tablet*/
+
+
+@media(min-width: 480px){
+
+  .table{
+    display: none;
+  }
+
+  .table-bottom{
+        display: none;
+  }
+
+  .mainimg2{
+    display: none;
+  }
+
+
+
+}

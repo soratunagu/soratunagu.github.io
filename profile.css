@@ -1,0 +1,239 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body {
+    font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.9;
+    text-align: left;
+}
+
+a{
+  text-decoration: none;
+  color: #333333
+}
+
+ul{
+  list-style: none;
+}
+
+.container{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.header-left img{
+  height : 150px;
+  float: left;
+}
+
+.header-menu{
+  display: flex;
+  padding-top: 30px;
+}
+
+.header-right{
+  margin-left: auto;
+  padding: 80px 30px 0 0;
+}
+
+.header-right img{
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+  padding: 0 5px;
+}
+
+.header-right img:hover{
+  opacity: 1;
+}
+
+.nav-list{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list a{
+  color: #333333;
+}
+
+.nav-list li{
+  font-size: 20px;
+  padding: 10px 18px 0 18px;
+  letter-spacing: 2px;
+}
+
+.nav-list li:hover{
+  text-decoration: underline;
+}
+
+header{
+border-bottom: 2px solid #BBBBCF;
+padding-bottom: 25px;
+}
+
+/*この上がheader*/
+
+.main-logo{
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 10px;
+  opacity: 0.6;
+  font-weight: 100;
+  padding: 80px 0 60px 0;
+}
+
+.myphoto img{
+  width: 250px;
+  padding: 10px 0 0 60px;
+}
+
+.contents{
+  display: flex;
+}
+
+.about-text{
+  font-size: 18px;
+  padding-left: 80px;
+}
+
+.about-text p.name{
+  font-size: 20px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+.about-text img{
+  width: 20px;
+}
+
+.about-text a{
+  opacity: 0.8;
+}
+
+.about-text a:hover{
+  opacity: 1;
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+.maintext{
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.about-wrapper{
+  padding-bottom: 100px;
+}
+
+/*下のnav*/
+
+footer .nav-list{
+  justify-content: flex-start;
+  padding: 0 0 80px 100px;
+}
+
+footer{
+  padding-top: 150px;
+}

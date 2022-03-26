@@ -1,0 +1,412 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body {
+    font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.9;
+   /*center*/
+}
+
+a{
+  text-decoration: none;
+  color: #333333
+}
+
+ul{
+  list-style: none;
+}
+
+.container{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.header-left img{
+  height: 150px;
+  float: left;
+}
+
+
+.header-menu{
+  display: flex;
+  padding-top: 30px;
+}
+
+.header-right{
+  margin-left: auto;
+  padding: 80px 30px 0 0;
+}
+
+.header-right img{
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+  padding: 0 5px;
+}
+
+.header-right img:hover{
+  opacity: 1;
+}
+
+.nav-list{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list a{
+  color: #333333;
+}
+
+.nav-list li{
+  font-size: 20px;
+  padding: 10px 18px 0 18px;
+  letter-spacing: 2px;
+}
+
+.nav-list li:hover{
+  text-decoration: underline;
+}
+
+/*この上がheader*/
+
+.mainimg{
+  width: 100%;
+  padding-top: 30px;
+}
+
+.contents{
+  display: flex;
+}
+
+.main-logo{
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 10px;
+  opacity: 0.6;
+  font-weight: 100;
+  padding: 80px 0 60px 0;
+}
+
+/*ここからservice*/
+
+.service-contents{
+  width: 50%;
+  text-align: center;
+}
+
+.service-contents img{
+  height: 102px;
+  width: 98px;
+  padding: 30px 0 50px 0;
+}
+
+.service-contents1{
+  width: 50%;
+  text-align: center;
+}
+
+.service-contents1 img{
+  height: 102px;
+  width: 98px;
+  padding: 30px 0 50px 0;
+}
+
+
+
+.service-text{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.service-contents p.font{
+  opacity: 0.6;
+}
+
+.service-contents h1{
+  font-size: 25px;
+}
+
+.service-contents1 p.font{
+  opacity: 0.6;
+}
+
+.service-contents1 h1{
+  font-size: 25px;
+}
+
+/*ここからworks*/
+
+.work-wrapper{
+  padding-top: 70px;
+}
+
+.work-contents1{
+  display: flex;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.work-contents2{
+  display: flex;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.info{
+  width: 50%;
+  text-align: center;
+  margin: 0 2%;
+}
+
+.info1{
+  width: 50%;
+  text-align: center;
+  margin: 0 2%;
+}
+
+.work-text{
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.work-contents img{
+  width: 85%;
+  padding-bottom: 7px;
+}
+
+.work-contents img:hover{
+  opacity: 0.5;
+}
+
+.moreinfo-wrapper p{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 60px;
+}
+
+.moreinfo-menu{
+  text-align: center;
+}
+
+.moreinfo-menu img{
+  width: 40px;
+  margin-top: 10px;
+  padding: 0 7px;
+  opacity: 1;
+}
+
+.moreinfo-about{
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+
+.moreinfo-menu img:hover{
+  opacity: 0.5;
+}
+
+/*ここからshop*/
+
+.shop-wrapper{
+  padding-top: 70px;
+}
+
+.shop-contents1{
+  display: flex;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.shop-contents2{
+  display: flex;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.shop-info1{
+  width: 50%;
+  text-align: center;
+  margin: 0 2%;
+}
+
+.shop-info{
+  width: 50%;
+  text-align: center;
+  margin: 0 2%;
+}
+
+.shop-text{
+  margin: 0 auto;
+}
+
+.shop-contents img{
+  width: 85%;
+  padding-bottom: 7px;
+}
+
+.shop-contents img:hover{
+  opacity: 0.5;
+}
+
+.shop-btn{
+  padding-top: 15px;
+}
+
+section {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+a.btn-shop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  background: #fff;
+  position: relative;
+}
+
+a.btn-shop span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  box-shadow: 0px 5px 12px #CAD4E2, -6px -6px 12px #FFF;
+  border-radius: 10px;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  transition-duration: 0.2s;
+}
+
+a.btn-shop:hover span {
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 4px #CAD4E2, -2px -2px 4px #FFF;
+}
+
+
+
+/*下のnav*/
+
+footer .nav-list{
+  justify-content: flex-start;
+  padding: 0 0 80px 100px;
+}
+
+footer{
+  padding-top: 150px;
+}

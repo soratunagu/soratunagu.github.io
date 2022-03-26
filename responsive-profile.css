@@ -1,0 +1,125 @@
+/*mobilephone*/
+
+@media(max-width:480px){
+
+  .container{
+    width: 100%;
+  }
+
+  .header-left img{
+    height: 90px;
+    float: left;
+  }
+
+  .header-right{
+    padding: 45px 10px 0 0;
+  }
+
+  .header-right img{
+    width: 25px;
+    height: 25px;
+    opacity: 0.6;
+    padding: 0 3px;
+  }
+
+  header{
+  border-bottom: none;
+  padding-bottom: 0px;
+  }
+
+  .nav-list{
+    display: none;
+  }
+
+  .table{
+    padding-top: 25px;
+  }
+
+  .table td{
+    border:solid 1px #d9d9d9;
+    text-align: center;
+    width: 50%;
+    padding: 10px 0;
+  }
+
+  .table a{
+    letter-spacing: 2px;
+    display: block;
+  }
+
+  .table-bottom td{
+    border:solid 1px #d9d9d9;
+    text-align: center;
+    width: 50%;
+    padding: 10px 0;
+  }
+
+  .table-bottom a{
+    letter-spacing: 2px;
+    display: block;
+  }
+
+  .contents{
+    display: block;
+  }
+
+  .main-logo{
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 6px;
+    opacity: 0.6;
+    font-weight: 100;
+    padding: 40px 0 30px 0;
+  }
+
+  /*ここからabout*/
+
+  .myphoto{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .myphoto img{
+    padding: 0px 0px 0 0;
+    width: 250px;
+  }
+
+  .maintext{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .about-text p.name{
+    font-size: 20px;
+    padding-bottom: 50px;
+  }
+
+  .myphoto{
+    padding-bottom: 10px;
+  }
+
+  .about-text{
+    padding-left: 0px;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+}
+
+
+/*PC and Tablet*/
+
+
+@media(min-width: 480px){
+
+  .table{
+    display: none;
+  }
+
+  .table-bottom{
+        display: none;
+  }
+
+
+}
