@@ -3,130 +3,703 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>空つなぐ～佐久たべごとくらしごと～</title>
+    <title>空つなぐ～佐久たべごとくらしごと～ | 伝統的な日本の体験</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>空つなぐ～佐久たべごとくらしごと～</h1>
+    <!-- スティッキーヘッダー -->
+    <header class="sticky-header">
+        <div class="logo">
+            <h1></h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#about">体験教室について</a></li>
-                <li><a href="#schedule">体験スケジュール</a></li>
+                <li><a href="#hero">ホーム</a></li>
+                <li><a href="#about">について</a></li>
+                <li><a href="#experiences">体験</a></li>
                 <li><a href="#pricing">料金</a></li>
                 <li><a href="#gallery">ギャラリー</a></li>
+                <li><a href="#testimonials">レビュー</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">お問い合わせ</a></li>
-                <li><a href="https://calendar.app.google/ESeNiVEcjesfXCXx6" class="button" target="_blank">予約はこちら</a></li>
+                <li><a href="#" class="nav-cta" id="navBookNow">今すぐ予約</a></li>
             </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>体験教室について</h2>
-        <p>伝統文化体験の宿つたやで藍染、機織り、郷土食料理などを通じて、地域の魅力を再発見し、文化を継承する場を提供しています。</p>
-        <p><strong>活動日：</strong> 火曜日・金曜日</p>
-        <p><strong>開催予定：</strong> ４月末から</p>
-    </section>
-
-    <section id="schedule">
-        <h2>体験スケジュール</h2>
-        <div class="experience-card">
-            <div class="experience-item">
-                <img src="imgs/aizome2.jpg" alt="藍染体験" class="experience-image">
-                <h3>藍染/機織り（3時間）</h3>
-                <p><strong>料金:</strong> 4000円（お茶とお菓子付き）</p>
-                <p>伝統的な藍染や機織りの技術を学びながら、手作りの作品を作成します。</p>
-                <a href="https://calendar.app.google/ESeNiVEcjesfXCXx6" class="button" target="_blank">予約する</a>
-            </div>
-            <div class="experience-item">
-                <img src="imgs/cooking.jpg" alt="藍染体験＋郷土料理体験" class="experience-image">
-                <h3>藍染/機織り＋郷土料理体験</h3>
-                <p><strong>料金:</strong> 5500円</p>
-                <p>藍染や機織り体験に加え、地元の郷土料理を学んで、食文化も体験します。</p>
-                <a href="https://calendar.app.google/ESeNiVEcjesfXCXx6" class="button" target="_blank">予約する</a>
-            </div>
-            <div class="experience-item">
-                <img src="imgs/fire.jpg" alt="竈ご飯" class="experience-image">
-                <h3>竈ご飯、みそ汁と漬物体験</h3>
-                <p><strong>料金:</strong> 4000円</p>
-                <p>伝統的な竈（かまど）で炊いたご飯を囲んで、みそ汁や漬物を一緒に楽しみます。</p>
-                <a href="https://calendar.app.google/ESeNiVEcjesfXCXx6" class="button" target="_blank">予約する</a>
-            </div>
-            <div class="experience-item">
-                <img src="imgs/mochi.jpg" alt="もちつき体験" class="experience-image">
-                <h3>もちつき体験</h3>
-                <p><strong>料金:</strong> 3500円（持ち帰り2kg）</p>
-                <p>もち米をついて、みんなで新鮮な餅を作り、持ち帰りもできます。</p>
-                <a href="https://calendar.app.google/ESeNiVEcjesfXCXx6" class="button" target="_blank">予約する</a>
+    <!-- ヒーローセクション -->
+    <section id="hero" class="hero-section">
+        <div class="hero-carousel">
+            <div class="carousel-slide active" style="background-image: url('imgs/background.jpg')"></div>
+            <div class="carousel-slide" style="background-image: url('imgs/aizome2.jpg')"></div>
+            <div class="carousel-slide" style="background-image: url('imgs/cooking.jpg')"></div>
+            <div class="carousel-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
             </div>
         </div>
-    </section>
-    
-    <section id="pricing">
-        <h2>料金詳細</h2>
-        <p>各体験には、地域の文化と技術を感じながら学べる貴重な体験が含まれています。すべての体験にはお茶やお菓子のサービスも付いており、体験後には心温まるひとときを過ごせます。</p>
-        <p><strong>藍染体験：</strong> 3500円（手ぬぐい1枚付き）、5000円（Tシャツと手ぬぐい付き）<br>
-            伝統的な藍染の技術を学び、手ぬぐいやTシャツに染め上げます。自分だけのオリジナルアイテムが作れます。</p>
-        <p><strong>機織り体験：</strong> 3500円（写真立て、コースター2枚付き）<br>
-            手織りの技術を学びながら、思い出に残る写真立てやコースターを作成します。</p>
-        <p><strong>藍染＆機織り体験：</strong> 5500円（藍染と機織り体験両方を体験）<br>
-            藍染と機織りの両方を楽しめるお得なセットです。どちらも体験したい方におすすめです。</p>
-        <p><strong>竈ご飯体験：</strong> 4000円（ご飯、みそ汁、漬物）<br>
-            地元の特産物を使ったみそ汁や漬物を作り、竈で炊いたご飯をみんなで囲んで楽しみます。食文化の豊かさを感じられる体験です。</p>
-        <p><strong>もちつき体験：</strong> 3500円（持ち帰り2kg）<br>
-            もち米を手作りでついて、新鮮なお餅を楽しみます。つきたてのお餅は格別です。</p>
-        <p>すべての体験には地域の伝統を学ぶ楽しさが詰まっています。これらの体験を通じて、地域文化の魅力を再発見しましょう。</p>
-    </section>
-    
-
-    <section id="gallery">
-        <h2>ギャラリー</h2>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="imgs/aizome.jpg" alt="藍染体験" class="gallery-img">
-                <div class="gallery-description">藍染体験の様子</div>
-            </div>
-            <div class="gallery-item">
-                <img src="imgs/aizome3.jpg" alt="機織り体験" class="gallery-img">
-                <div class="gallery-description">機織り体験</div>
-            </div>
-            <div class="gallery-item">
-                <img src="imgs/fire.jpg" alt="郷土料理" class="gallery-img">
-                <div class="gallery-description">郷土料理の準備</div>
-            </div>
-            <div class="gallery-item">
-                <img src="imgs/cooking.jpg" alt="竈ご飯" class="gallery-img">
-                <div class="gallery-description">竈ご飯の炊き方</div>
-            </div>
-            <div class="gallery-item">
-                <img src="imgs/mochi.jpg" alt="もちつき体験" class="gallery-img">
-                <div class="gallery-description">もちつき体験</div>
-            </div>
-            <div class="gallery-item">
-                <img src="imgs/aizome2.jpg" alt="もちつき体験" class="gallery-img">
-                <div class="gallery-description">藍染体験</div>
+        <div class="hero-content">
+            <h1>伝統的な日本文化を体験</h1>
+            <p>藍染、織物、そして本格的な料理を通して、地元の伝統の魅力を発見しよう</p>
+            <div class="hero-cta">
+                <a href="#" class="cta-button primary" id="heroBookNow">体験を予約する</a>
+                <a href="#experiences" class="cta-button secondary">アクティビティを探る</a>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- についてセクション -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>私たちの文化体験について</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>蔦屋インでは、実際に手を動かす体験を通じて、日本の伝統文化の魅力を再発見していただけます。私たちのクラスは、本物の地元の伝統に浸りながら、思い出に残るお土産を作ることを目指しています。</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-calendar-alt"></i>
+                            <p><strong>開催日：</strong> 火曜日と金曜日</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <p><strong>所要時間：</strong> 1体験あたり2～3時間</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p><strong>場所：</strong> 蔦屋イン、佐久市</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <p><strong>グループサイズ：</strong> 2～8人の小グループ</p>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#" class="cta-button primary" id="aboutBookNow">予約する</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="imgs/aizome3.jpg" alt="伝統的な日本体験" class="rounded-image">
+                    <div class="social-proof">
+                        <span class="booking-count"><i class="fas fa-user-check"></i> 今月の予約数：250件以上</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 体験セクション -->
+<section id="experiences" class="experiences-section">
+    <div class="container">
+        <h2>私たちの文化体験</h2>
+        <p class="section-intro">本物の日本文化体験をお選びください</p>
+        
+        <div class="experience-filters">
+            <button class="filter-btn active" data-filter="all">すべての体験</button>
+            <button class="filter-btn" data-filter="craft">クラフト</button>
+            <button class="filter-btn" data-filter="food">食事</button>
+            <button class="filter-btn" data-filter="combo">コンボ体験</button>
+        </div>
+        
+        <div class="experience-grid">
+            <!-- 藍染体験 -->
+            <div class="experience-card" data-category="craft">
+                <div class="card-badge">最も人気</div>
+                <div class="card-image">
+                    <img src="imgs/aizome2.jpg" alt="藍染体験">
+                </div>
+                <div class="card-content">
+                    <h3>藍染体験</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 3時間</span>
+                        <span><i class="fas fa-users"></i> <span class="spots-left">残り4席</span></span>
+                    </div>
+                    <p>藍染の伝統技術を学びながら、自分だけの手作りアイテムを作って持ち帰ろう。</p>
+                    <div class="card-price">
+                        <span class="price">¥4,000</span>
+                        <span class="price-includes">お茶とお菓子付き</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="cta-button primary book-now-btn" data-experience="Indigo Dyeing">今すぐ予約</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 織物体験 -->
+            <div class="experience-card" data-category="craft">
+                <div class="card-image">
+                    <img src="imgs/aizome3.jpg" alt="織物体験">
+                </div>
+                <div class="card-content">
+                    <h3>織物体験</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 3時間</span>
+                        <span><i class="fas fa-users"></i> <span class="spots-left">残り6席</span></span>
+                    </div>
+                    <p>手織りの技術を学びながら、フォトフレームやコースターなどの思い出の品を作りましょう。</p>
+                    <div class="card-price">
+                        <span class="price">¥3,500</span>
+                        <span class="price-includes">フォトフレームとコースター2枚付き</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="cta-button primary book-now-btn" data-experience="Weaving">今すぐ予約</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 藍染 + 地元の料理体験 -->
+            <div class="experience-card" data-category="combo">
+                <div class="card-badge">最良の価値</div>
+                <div class="card-image">
+                    <img src="imgs/cooking.jpg" alt="藍染 + 地元の料理体験">
+                </div>
+                <div class="card-content">
+                    <h3>藍染 + 地元の料理</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 5時間</span>
+                        <span><i class="fas fa-users"></i> <span class="spots-left">残り3席</span></span>
+                    </div>
+                    <p>藍染と地元料理の調理を両方体験できる、包括的な文化パッケージ。</p>
+                    <div class="card-price">
+                        <span class="price">¥5,500</span>
+                        <span class="price-includes">すべての材料とランチ付き</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="cta-button primary book-now-btn" data-experience="Indigo Dyeing + Local Cuisine">今すぐ予約</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- かまどご飯体験 -->
+            <div class="experience-card" data-category="food">
+                <div class="card-image">
+                    <img src="imgs/fire.jpg" alt="かまどご飯体験">
+                </div>
+                <div class="card-content">
+                    <h3>かまどご飯体験</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 2時間</span>
+                        <span><i class="fas fa-users"></i> <span class="spots-left">残り5席</span></span>
+                    </div>
+                    <p>伝統的なかまどで炊いたご飯を、味噌汁や漬物と一緒に楽しむ体験。</p>
+                    <div class="card-price">
+                        <span class="price">¥4,000</span>
+                        <span class="price-includes">フルコースの食事付き</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="cta-button primary book-now-btn" data-experience="Kamado Rice">今すぐ予約</a>
+                    </div>
+                </div>
+            </div>
+<!-- 餅つき体験 -->
+<div class="experience-card" data-category="food">
+    <div class="card-image">
+        <img src="imgs/mochi.jpg" alt="餅つき体験">
+    </div>
+    <div class="card-content">
+        <h3>餅つき体験</h3>
+        <div class="card-meta">
+            <span><i class="fas fa-clock"></i> 2時間</span>
+            <span><i class="fas fa-users"></i> <span class="spots-left">残り7席</span></span>
+        </div>
+        <p>もち米をついて新鮮な餅を作り、後で楽しむために持ち帰ることができます（2kg付き）。</p>
+        <div class="card-price">
+            <span class="price">¥3,500</span>
+            <span class="price-includes">2kgの餅を持ち帰り</span>
+        </div>
+        <div class="card-actions">
+            <a href="#" class="cta-button primary book-now-btn" data-experience="Mochi Making">今すぐ予約</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 価格セクション -->
+<section id="pricing" class="pricing-section">
+    <div class="container">
+        <h2>価格詳細</h2>
+        <p class="section-intro">すべての体験には、お茶、お菓子、そして思い出に残る文化体験が含まれています</p>
+        
+        <div class="pricing-table">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>藍染</h3>
+                    <div class="price">¥3,500〜</div>
+                </div>
+                <div class="pricing-body">
+                    <ul>
+                        <li><i class="fas fa-check"></i> 手拭い付き（¥3,500）</li>
+                        <li><i class="fas fa-check"></i> Tシャツ + 手拭い（¥5,000）</li>
+                        <li><i class="fas fa-check"></i> 伝統技術</li>
+                        <li><i class="fas fa-check"></i> 作成したアイテムを持ち帰り</li>
+                        <li><i class="fas fa-check"></i> お茶とお菓子付き</li>
+                    </ul>
+                    <a href="#" class="cta-button primary book-now-btn" data-experience="Indigo Dyeing">この体験を予約</a>
+                </div>
+            </div>
+            
+            <div class="pricing-card featured">
+                <div class="pricing-badge">最良の価値</div>
+                <div class="pricing-header">
+                    <h3>コンボパッケージ</h3>
+                    <div class="price">¥5,500</div>
+                </div>
+                <div class="pricing-body">
+                    <ul>
+                        <li><i class="fas fa-check"></i> 藍染体験</li>
+                        <li><i class="fas fa-check"></i> 織物体験</li>
+                        <li><i class="fas fa-check"></i> 地元料理の調理</li>
+                        <li><i class="fas fa-check"></i> フルコースの食事付き</li>
+                        <li><i class="fas fa-check"></i> すべての作成物を持ち帰り</li>
+                    </ul>
+                    <a href="#" class="cta-button primary book-now-btn" data-experience="Combo Package">この体験を予約</a>
+                </div>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>食事体験</h3>
+                    <div class="price">¥3,500〜</div>
+                </div>
+                <div class="pricing-body">
+                    <ul>
+                        <li><i class="fas fa-check"></i> かまどご飯（¥4,000）</li>
+                        <li><i class="fas fa-check"></i> 餅つき体験（¥3,500）</li>
+                        <li><i class="fas fa-check"></i> 地元の食材使用</li>
+                        <li><i class="fas fa-check"></i> 伝統的な調理法</li>
+                        <li><i class="fas fa-check"></i> 持ち帰りの分量付き</li>
+                    </ul>
+                    <a href="#" class="cta-button primary book-now-btn" data-experience="Food Experience">この体験を予約</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="package-deal">
+            <div class="package-content">
+                <h3>特別グループパッケージ</h3>
+                <p>4人以上で予約すると、すべての体験が10％割引になります！</p>
+                <a href="#" class="cta-button primary" id="groupBooking">グループ体験を予約</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ギャラリーセクション -->
+<section id="gallery" class="gallery-section">
+    <div class="container">
+        <h2>体験ギャラリー</h2>
+        <p class="section-intro">私たちの文化体験からの写真をご覧ください</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="imgs/aizome.jpg" alt="藍染の過程" class="gallery-img">
+                <div class="gallery-caption">藍染の過程</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/aizome2.jpg" alt="藍染の布" class="gallery-img">
+                <div class="gallery-caption">藍染の布</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/aizome3.jpg" alt="織物体験" class="gallery-img">
+                <div class="gallery-caption">織物体験</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/cooking.jpg" alt="地元料理の調理" class="gallery-img">
+                <div class="gallery-caption">地元料理の調理</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/fire.jpg" alt="伝統的なかまど料理" class="gallery-img">
+                <div class="gallery-caption">伝統的なかまど料理</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/mochi.jpg" alt="餅つき" class="gallery-img">
+                <div class="gallery-caption">餅つき</div>
+            </div>
+        </div>
+        
+        <div class="gallery-cta">
+            <p>もっと見たいですか？最新の写真はInstagramでチェックしてください！</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagramでフォロー</a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i> Facebookで「いいね！」</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 口コミセクション -->
+<section id="testimonials" class="testimonials-section">
+    <div class="container">
+        <h2>お客様の声</h2>
+        <div class="testimonial-slider" id="testimonialSlider">
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"藍染の体験は素晴らしかったです！インストラクターは忍耐強く、知識が豊富で、自分が作ったスカーフを誇りに思っています。ぜひおすすめします！"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah T." class="author-img">
+                        <div class="author-info">
+                            <h4>Sarah T.</h4>
+                            <p>藍染体験</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"餅を伝統的な方法で作る体験は家族にとってとても楽しいものでした。子供たちはお米をつくのが楽しく、大人たちはその後数日間餅を楽しみました。旅行のハイライトでした！"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James K." class="author-img">
+                        <div class="author-info">
+                            <h4>James K.</h4>
+                            <p>餅つき体験</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"コンボパッケージは日本の文化を複数の側面から体験するのにぴったりでした。藍染は魅力的で、伝統的な料理を作ることは地元の食文化を学ぶ素晴らしい方法でした。"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma L." class="author-img">
+                        <div class="author-info">
+                            <h4>Emma L.</h4>
+                            <p>コンボ体験</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-controls">
+            <button id="prevTestimonial" class="testimonial-control"><i class="fas fa-chevron-left"></i></button>
+            <button id="nextTestimonial" class="testimonial-control"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ セクション -->
+<section id="faq" class="faq-section">
+    <div class="container">
+        <h2>よくある質問</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>藍染体験には何を着ていけばよいですか？</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>汚れても構わない快適な服をお勧めします。エプロンはご用意していますが、藍染料が飛び散ることがありますので、閉じた靴を履いてくることもお勧めします。</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>事前に予約は必要ですか？</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>はい、すべての体験には予約が必要です。特にピークシーズン中は、3日前までに予約することをお勧めします。</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>子供向けの体験はありますか？</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>ほとんどの体験は、大人と一緒に参加する6歳以上の子供に適しています。特に餅つき体験は、家族連れに人気です。</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>キャンセルポリシーはどうなっていますか？</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>体験予定日の48時間前までのキャンセルは全額返金されます。48時間以内のキャンセルについては、50%の返金または日程変更が可能です。</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>英語での体験は提供していますか？</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>はい、すべての体験は英語を話すガイドと一緒に提供しています。予約時にご希望の言語をお知らせください。</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>津田屋インの行き方は？</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>津田屋インは佐久市にあります。詳細な道順は予約時にご案内いたします。公共交通機関や駐車場の情報も提供します。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 関連体験セクション -->
+<section id="related" class="related-section">
+    <div class="container">
+        <h2>他にもおすすめの体験</h2>
+        <div class="related-experiences" id="relatedExperiences">
+            <!-- このセクションは、ユーザーの閲覧に基づいて動的に表示されます -->
+            <div class="related-card">
+                <img src="imgs/aizome.jpg" alt="茶道体験">
+                <div class="related-content">
+                    <h3>茶道体験</h3>
+                    <p>伝統的な日本の茶道を学ぶ体験</p>
+                    <div class="related-price">¥3,800</div>
+                    <a href="#" class="cta-button secondary">詳細を見る</a>
+                </div>
+            </div>
+            <div class="related-card">
+                <img src="imgs/fire.jpg" alt="酒蔵巡り">
+                <div class="related-content">
+                    <h3>酒蔵巡り</h3>
+                    <p>地元の酒を専門ガイドと共に試飲する体験</p>
+                    <div class="related-price">¥4,200</div>
+                    <a href="#" class="cta-button secondary">詳細を見る</a>
+                </div>
+            </div>
+            <div class="related-card">
+                <img src="imgs/cooking.jpg" alt="日本料理教室">
+                <div class="related-content">
+                    <h3>日本料理教室</h3>
+                    <p>本格的な日本料理の基本を学ぶ体験</p>
+                    <div class="related-price">¥4,500</div>
+                    <a href="#" class="cta-button secondary">詳細を見る</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- お問い合わせセクション -->
+<section id="contact" class="contact-section">
+    <div class="container">
         <h2>お問い合わせ</h2>
-        <p>体験の予約や質問がある場合、下記のボタンからGoogleフォームにアクセスしてください。</p>
-        <div class="button-container">
-            <a href="https://forms.gle/PfvhR5yY24GdxaBv6" class="button" target="_blank">Googleフォームでのお問い合わせ</a>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>所在地</h3>
+                        <p>津田屋イン、佐久市、長野県、日本</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>メール</h3>
+                        <p>info@soratsumuguexperience.jp</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>電話</h3>
+                        <p>+81-123-456-789</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>営業時間</h3>
+                        <p>火曜日・金曜日 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>フォローする</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>メッセージを送る</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">件名</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button primary">メッセージを送信</button>
+                </form>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2025 空つなぐ～佐久たべごとくらしごと～</p>
-    </footer>
+<!-- ニュースレターセクション -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>最新情報を受け取る</h2>
+                <p>特別オファー、新しい体験、文化的な洞察をお届けするニュースレターにご登録ください。</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="メールアドレス" required>
+                <button type="submit" class="cta-button primary">登録する</button>
+            </form>
+        </div>
+    </div>
+</section>
 
-    <script src="script.js"></script>
-</body>
+<!-- フッター -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>空つなぐ～佐久たべごとくらしごと～</h2>
+                <p>文化体験を通じて伝統とつながる</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>体験</h3>
+                    <ul>
+                        <li><a href="#experiences">藍染体験</a></li>
+                        <li><a href="#experiences">織物体験</a></li>
+                        <li><a href="#experiences">かまどご飯体験</a></li>
+                        <li><a href="#experiences">餅作り体験</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>情報</h3>
+                    <ul>
+                        <li><a href="#about">私たちについて</a></li>
+                        <li><a href="#pricing">料金</a></li>
+                        <li><a href="#faq">よくある質問</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>ポリシー</h3>
+                    <ul>
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                        <li><a href="#">キャンセルポリシー</a></li>
+                        <li><a href="#">アクセシビリティ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 空つなぐ～佐久たべごとくらしごと～ 全著作権所有。</p>
+        </div>
+    </div>
+</footer>
 
-<!-- 予約ボタン -->
-<div class="fixed-reservation-button">
-    <a href="https://calendar.app.google/ESeNiVEcjesfXCXx6" class="button" target="_blank">予約はこちらから</a>
+<!-- 予約モーダル -->
+<div class="modal" id="bookingModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>体験を予約する</h2>
+        <div id="selectedExperience"></div>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="bookingName">お名前</label>
+                <input type="text" id="bookingName" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="bookingEmail">メールアドレス</label>
+                <input type="email" id="bookingEmail" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="bookingDate">希望日</label>
+                <input type="date" id="bookingDate" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="bookingPeople">人数</label>
+                <select id="bookingPeople" name="people" required>
+                    <option value="1">1人</option>
+                    <option value="2">2人</option>
+                    <option value="3">3人</option>
+                    <option value="4">4人</option>
+                    <option value="5">5人</option>
+                    <option value="6+">6人以上</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bookingNotes">特別なリクエスト</label>
+                <textarea id="bookingNotes" name="notes" rows="3"></textarea>
+            </div>
+            <button type="submit" class="cta-button primary">予約を完了する</button>
+        </form>
+    </div>
 </div>
 
+<!-- 成功モーダル -->
+<div class="modal" id="successModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="success-message">
+            <i class="fas fa-check-circle"></i>
+            <h2>予約が成功しました！</h2>
+            <p>ご予約いただきありがとうございます。確認メールを送信しましたので、ご確認ください。</p>
+            <p>私たちの文化体験をお楽しみに！</p>
+            <button class="cta-button primary" id="closeSuccessModal">閉じる</button>
+        </div>
+    </div>
+</div>
+
+<!-- 固定CTAボタン -->
+<div class="fixed-cta">
+    <a href="#" id="fixedBookNow" class="cta-button primary">
+        <i class="fas fa-calendar-check"></i> 今すぐ予約
+    </a>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
