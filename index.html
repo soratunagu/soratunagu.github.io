@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>空つなぐ～佐久たべごとくらしごと～ | Traditional Japanese Experiences</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="sticky-header">
+    <div class="container">
+      <div class="logo">
+        <h1>空つなぐ</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="nav-cta" id="navBookNow">Book Now</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-carousel">
+      <div class="carousel-slide active" style="background-image: url('imgs/background.jpg')"></div>
+      <div class="carousel-slide" style="background-image: url('imgs/mochi.jpg')"></div>
+      <div class="carousel-slide" style="background-image: url('imgs/aizome3.jpg')"></div>
+      <div class="carousel-indicators">
+        <span class="indicator active"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+      </div>
+    </div>
+    <div class="hero-content">
+      <h1>伝統的な日本文化</h1>
+      <p>藍染・機織り・囲炉裏や竈ごはん体験を通して、手仕事の楽しさや地元の魅力を発見しよう</p>
+      <div class="hero-cta">
+        <a href="#" class="cta-button primary" id="heroBookNow">予約する</a>
+        <a href="#experiences" class="cta-button secondary">体験の詳細</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiences Section -->
+  <section id="experiences" class="experiences-section">
+    <div class="container">
+      <h2>体験内容</h2>
+      <p class="section-intro">多彩なコースをご用意しております。お好みのコースをお選びのうえ、ご予約ください。</p>
+      
+      <div class="experience-filters">
+        <button class="filter-btn active" data-filter="all">All Experiences</button>
+        <button class="filter-btn" data-filter="craft">Traditional Crafts</button>
+        <button class="filter-btn" data-filter="food">Culinary</button>
+        <button class="filter-btn" data-filter="culture">Cultural</button>
+      </div>
+      
+      <div class="experience-grid">
+        <!-- Experience Card 1 -->
+        <div class="experience-card" data-category="craft">
+          <div class="card-badge">Popular</div>
+          <div class="card-image">
+            <img src="https://source.unsplash.com/random/600x400/?indigo,dyeing" alt="Indigo Dyeing Workshop">
+          </div>
+          <div class="card-content">
+            <h3>藍染め体験 (手ぬぐいとハンカチ)</h3>
+            <div class="card-meta">
+              <span>10:00~13:00</span>
+            </div>
+            <p>藍染の伝統技術を学びながらオリジナルの手ぬぐいとハンカチを染めましょう。追加料金で他のアイテムも染めることができます。</p>
+            <div class="card-price">
+              <span class="price">¥5,000</span>
+              <span class="price-includes">お茶とお菓子付き</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="cta-button primary book-now-btn" data-experience="Indigo Dyeing Workshop">予約する</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Card 2 -->
+        <div class="experience-card" data-category="food">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/random/600x400/?sushi,making" alt="Sushi Making Class">
+          </div>
+          <div class="card-content">
+            <h3>藍染体験 (Tシャツ)</h3>
+            <div class="card-meta">
+              <span>10:00~13:00</span>
+            </div>
+            <p>藍染の伝統技術を使ってオリジナルのTシャツを染めてみよう。追加料金で他のアイテムも染めることができます。</p>
+            <div class="card-price">
+              <span class="price">¥8,000</span>
+              <span class="price-includes">お茶とお菓子付き</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="cta-button primary book-now-btn" data-experience="Sushi Making Class">Book Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Card 3 -->
+        <div class="experience-card" data-category="culture">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/random/600x400/?tea,ceremony" alt="Tea Ceremony Experience">
+          </div>
+          <div class="card-content">
+            <h3>機織り体験</h3>
+            <div class="card-meta">
+              <span>10:00~13:00</span>
+            </div>
+            <p>佐久地域に伝わる伝統的な機織りを体験できます。写真たてに入れて記念品にしたり、そのまま布をお持ち帰り頂き、バッグなどに加工していただくことも可能です。追加料金 (1500円)でカードケースへの加工も承ります。</p>
+            <div class="card-price">
+              <span class="price">¥5,000</span>
+              <span class="price-includes">Includes tea & sweets</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="cta-button primary book-now-btn" data-experience="Tea Ceremony Experience">Book Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Card 4 -->
+        <div class="experience-card" data-category="craft">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/random/600x400/?calligraphy,japanese" alt="Calligraphy Workshop">
+          </div>
+          <div class="card-content">
+            <h3>Calligraphy Workshop</h3>
+            <div class="card-meta">
+              <span>2 hours</span>
+            </div>
+            <p>Learn the art of Japanese calligraphy (Shodo) and create your own beautiful characters with traditional brushes and ink.</p>
+            <div class="card-price">
+              <span class="price">¥4,500</span>
+              <span class="price-includes">Includes all materials</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="cta-button primary book-now-btn" data-experience="Calligraphy Workshop">Book Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Card 5 -->
+        <div class="experience-card" data-category="food">
+          <div class="card-badge">New</div>
+          <div class="card-image">
+            <img src="https://source.unsplash.com/random/600x400/?sake,japanese" alt="Sake Tasting Tour">
+          </div>
+          <div class="card-content">
+            <h3>Sake Tasting Tour</h3>
+            <div class="card-meta">
+              <span>3 hours</span>
+            </div>
+            <p>Discover the world of Japanese sake with a guided tasting tour. Learn about brewing methods and sample premium varieties.</p>
+            <div class="card-price">
+              <span class="price">¥7,500</span>
+              <span class="price-includes">Includes tastings & snacks</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="cta-button primary book-now-btn" data-experience="Sake Tasting Tour">Book Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Card 6 -->
+        <div class="experience-card" data-category="culture">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/random/600x400/?kimono,japanese" alt="Kimono Experience">
+          </div>
+          <div class="card-content">
+            <h3>Kimono Experience</h3>
+            <div class="card-meta">
+              <span>2 hours</span>
+            </div>
+            <p>Wear a traditional Japanese kimono and learn about its history and significance. Includes a professional photo session.</p>
+            <div class="card-price">
+              <span class="price">¥9,000</span>
+              <span class="price-includes">Includes kimono rental & photos</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="cta-button primary book-now-btn" data-experience="Kimono Experience">Book Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Card 7 -->
+        <div class="experience-card" data-category="craft">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/random/600x400/?pottery,japanese" alt="Pottery Workshop">
+          </div>
+          <div class="card-content">
+            <h3>Pottery Workshop</h3>
+            <div class="card-meta">
+              <span>3.5 hours</span>
+            </div>
+            <p>Create your own ceramic piece using traditional Japanese pottery techniques. Your creation will be fired and shipped to you.</p>
+            <div class="card-price">
+              <span class="price">¥7,000</span>
+              <span class="price-includes">Includes materials & shipping</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="cta-button primary book-now-btn" data-experience="Pottery Workshop">Book Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Card 8 -->
+        <div class="experience-card" data-category="food">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/random/600x400/?mochi,japanese" alt="Mochi Making Class">
+          </div>
+          <div class="card-content">
+            <h3>Mochi Making Class</h3>
+            <div class="card-meta">
+              <span>2 hours</span>
+            </div>
+            <p>Learn to make traditional Japanese mochi (rice cakes) by hand. Create both sweet and savory varieties to enjoy.</p>
+            <div class="card-price">
+              <span class="price">¥5,500</span>
+              <span class="price-includes">Includes ingredients & recipes</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="cta-button primary book-now-btn" data-experience="Mochi Making Class">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Soratunagu</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Soratunagu (空つなぐ) means "connecting with the sky" in Japanese, symbolizing our mission to connect people with the boundless beauty of traditional Japanese culture.</p>
+          <p>Based in the historic Saku region, we collaborate with local artisans, chefs, and cultural practitioners to offer authentic experiences that have been passed down through generations.</p>
+          
+          <div class="about-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Authentic local experiences</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Small groups for personalized attention</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Expert instructors and guides</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>All materials included</span>
+            </div>
+          </div>
+          
+          <div class="about-cta">
+            <a href="#" class="cta-button primary" id="aboutBookNow">Book an Experience</a>
+          </div>
+        </div>
+        
+        <div class="about-image">
+          <img src="https://source.unsplash.com/random/600x800/?japan,artisan" alt="Japanese Artisan" class="rounded-image">
+          <div class="social-proof">
+            <div class="booking-count">
+              <i class="fas fa-users"></i>
+              <span>500+ happy customers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <h2>Experience Gallery</h2>
+      <p class="section-intro">Glimpses of authentic Japanese cultural experiences shared by our guests</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/random/600x600/?japan,indigo" alt="Indigo Dyeing Experience" class="gallery-img">
+          <div class="gallery-overlay">
+            <span><i class="fas fa-search-plus"></i></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/random/600x600/?japan,tea" alt="Tea Ceremony" class="gallery-img">
+          <div class="gallery-overlay">
+            <span><i class="fas fa-search-plus"></i></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/random/600x600/?japan,sushi" alt="Sushi Making" class="gallery-img">
+          <div class="gallery-overlay">
+            <span><i class="fas fa-search-plus"></i></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/random/600x600/?japan,calligraphy" alt="Calligraphy Workshop" class="gallery-img">
+          <div class="gallery-overlay">
+            <span><i class="fas fa-search-plus"></i></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/random/600x600/?japan,kimono" alt="Kimono Experience" class="gallery-img">
+          <div class="gallery-overlay">
+            <span><i class="fas fa-search-plus"></i></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/random/600x600/?japan,pottery" alt="Pottery Workshop" class="gallery-img">
+          <div class="gallery-overlay">
+            <span><i class="fas fa-search-plus"></i></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/random/600x600/?japan,sake" alt="Sake Tasting" class="gallery-img">
+          <div class="gallery-overlay">
+            <span><i class="fas fa-search-plus"></i></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/random/600x600/?japan,mochi" alt="Mochi Making" class="gallery-img">
+          <div class="gallery-overlay">
+            <span><i class="fas fa-search-plus"></i></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/random/600x600/?japan,tradition" alt="Traditional Experience" class="gallery-img">
+          <div class="gallery-overlay">
+            <span><i class="fas fa-search-plus"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+      <div class="lightbox-caption"></div>
+      <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- Follow Us Section -->
+  <section id="social" class="social-section">
+    <div class="container">
+      <h2>Follow Us</h2>
+      <p class="section-intro">Stay connected with us on social media for the latest updates, behind-the-scenes content, and special offers</p>
+      
+      <div class="social-links-container">
+        <a href="https://instagram.com/soratunagu" target="_blank" rel="noopener noreferrer" class="social-link instagram">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="https://facebook.com/soratunagu" target="_blank" rel="noopener noreferrer" class="social-link facebook">
+          <i class="fab fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+      </div>
+      
+      <div class="social-feed">
+        <p>Follow <strong>#SoratunaguExperience</strong> to see our guests' shared moments</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <h2>What Our Guests Say</h2>
+      <p class="section-intro">Authentic reviews from guests who have experienced our cultural workshops</p>
+      
+      <div class="testimonial-container">
+        <div class="testimonial-slider" id="testimonialSlider">
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"The indigo dyeing workshop was incredible! Our instructor was patient and knowledgeable, and I left with a beautiful scarf I made myself. Highly recommend this authentic experience!"</p>
+              <div class="testimonial-author">
+                <img src="https://source.unsplash.com/random/100x100/?portrait,woman" alt="Sarah Johnson" class="author-img">
+                <div class="author-info">
+                  <h4>Sarah Johnson</h4>
+                  <p>United States</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"The tea ceremony was a peaceful and mindful experience. I learned so much about Japanese culture and traditions. The host was gracious and made everyone feel welcome."</p>
+              <div class="testimonial-author">
+                <img src="https://source.unsplash.com/random/100x100/?portrait,man" alt="David Chen" class="author-img">
+                <div class="author-info">
+                  <h4>David Chen</h4>
+                  <p>Canada</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>"The sushi making class was so much fun! Our chef was entertaining and taught us all the techniques. I've been impressing my friends with my sushi skills ever since returning home."</p>
+              <div class="testimonial-author">
+                <img src="https://source.unsplash.com/random/100x100/?portrait,woman2" alt="Emma Wilson" class="author-img">
+                <div class="author-info">
+                  <h4>Emma Wilson</h4>
+                  <p>Australia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"The kimono experience was a highlight of our trip to Japan. The attention to detail and the knowledge of our host made it special. The photos we took are treasured memories."</p>
+              <div class="testimonial-author">
+                <img src="https://source.unsplash.com/random/100x100/?portrait,man2" alt="Thomas Mueller" class="author-img">
+                <div class="author-info">
+                  <h4>Thomas Mueller</h4>
+                  <p>Germany</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-controls">
+          <button id="prevTestimonial" class="testimonial-control"><i class="fas fa-chevron-left"></i></button>
+          <button id="nextTestimonial" class="testimonial-control"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <p class="section-intro">Find answers to common questions about our cultural experiences</p>
+      
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do I need to speak Japanese to participate?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>No, all our experiences are conducted with English-speaking guides. Our instructors are fluent in English and can provide clear instructions. Some basic Japanese phrases will be taught during the sessions to enhance your cultural experience.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What should I wear to the workshops?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We recommend comfortable, casual clothing that you don't mind getting slightly dirty, especially for hands-on workshops like indigo dyeing or pottery. For tea ceremonies and kimono experiences, we provide appropriate attire or guidance on what to wear.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can I take home what I make?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! All items you create during our workshops are yours to keep. For pottery workshops, we can arrange shipping if your creation needs to be fired in a kiln after your session. Shipping fees may apply for international deliveries.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Are the experiences suitable for children?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Most of our experiences are suitable for children aged 8 and above when accompanied by an adult. We offer special family-friendly sessions for some workshops. Please check the specific experience details or contact us for more information about age suitability.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What is your cancellation policy?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We understand that plans can change. Cancellations made 48 hours or more before your scheduled experience will receive a full refund. Cancellations within 48 hours are eligible for a 50% refund or the option to reschedule for another date (subject to availability).</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you accommodate dietary restrictions for food experiences?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we can accommodate most dietary restrictions with advance notice. Please inform us of any allergies or dietary requirements when booking, and we'll do our best to adapt the experience accordingly. Vegetarian and vegan options are available for most culinary workshops.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- You Might Also Like Section -->
+  <section id="recommendations" class="recommendations-section">
+    <div class="container">
+      <h2>You Might Also Like</h2>
+      <p class="section-intro">Discover more unique cultural experiences to enhance your journey</p>
+      
+      <div class="recommendations-grid">
+        <div class="recommendation-card">
+          <div class="recommendation-image">
+            <img src="https://source.unsplash.com/random/600x400/?japan,festival" alt="Seasonal Festivals">
+          </div>
+          <div class="recommendation-content">
+            <h3>Seasonal Festival Tours</h3>
+            <p>Experience Japan's vibrant seasonal festivals with guided tours to local celebrations. Witness traditional performances, taste seasonal delicacies, and immerse yourself in the festive atmosphere.</p>
+            <a href="#" class="cta-button secondary">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="recommendation-card">
+          <div class="recommendation-image">
+            <img src="https://source.unsplash.com/random/600x400/?japan,cooking" alt="Cooking Class">
+          </div>
+          <div class="recommendation-content">
+            <h3>Home Cooking Experience</h3>
+            <p>Join a local family for an authentic home cooking experience. Learn family recipes passed down through generations and enjoy a meal together in a traditional Japanese home setting.</p>
+            <a href="#" class="cta-button secondary">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="recommendation-card">
+          <div class="recommendation-image">
+            <img src="https://source.unsplash.com/random/600x400/?japan,garden" alt="Garden Tour">
+          </div>
+          <div class="recommendation-content">
+            <h3>Traditional Garden Tour</h3>
+            <p>Discover the philosophy and design principles behind Japanese gardens with our expert guides. Visit historic gardens and learn about the symbolism and techniques used in these peaceful sanctuaries.</p>
+            <a href="#" class="cta-button secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="section-intro">Have questions or special requests? We're here to help you plan your perfect cultural experience</p>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>1-2-3 Sakuramachi, Saku City<br>Nagano Prefecture, Japan 385-0000</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h3>Phone</h3>
+              <p>+81 267-XX-XXXX</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>info@soratunagu.jp</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h3>Hours</h3>
+              <p>Monday - Saturday: 9:00 AM - 6:00 PM<br>Sunday: 10:00 AM - 4:00 PM</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" name="name" required>
+              <span class="error-message" id="nameError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" name="email" required>
+              <span class="error-message" id="emailError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="subject" required>
+              <span class="error-message" id="subjectError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="5" required></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+            
+            <button type="submit" class="cta-button primary">Send Message</button>
+          </form>
+          
+          <div id="formSuccess" class="form-message success">
+            <i class="fas fa-check-circle"></i>
+            <p>Thank you for your message! We'll get back to you soon.</p>
+          </div>
+          
+          <div id="formError" class="form-message error">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Oops! Something went wrong. Please try again later.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Book Your Experience</h2>
+      <div id="selectedExperience"></div>
+      
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input id="name" type="text" placeholder="Enter your full name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="text" placeholder="Enter your phone number" required>
+        </div>
+        
+        
+        
+        <div class="form-group">
+          <label for="classSelect">Select Experience</label>
+          <select id="classSelect" required>
+            <option value="">Choose an experience</option>
+            <option value="Indigo Dyeing Workshop">Indigo Dyeing Workshop</option>
+            <option value="Sushi Making Class">Sushi Making Class</option>
+            <option value="Tea Ceremony Experience">Tea Ceremony Experience</option>
+            <option value="Calligraphy Workshop">Calligraphy Workshop</option>
+            <option value="Sake Tasting Tour">Sake Tasting Tour</option>
+            <option value="Kimono Experience">Kimono Experience</option>
+            <option value="Pottery Workshop">Pottery Workshop</option>
+            <option value="Mochi Making Class">Mochi Making Class</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="peopleNumber">Number of People</label>
+          <input id="peopleNumber" type="number" min="1" max="10" placeholder="How many people?" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reservationDate">Reservation Date</label>
+            <input id="reservationDate" type="text" placeholder="Select a date" readonly required>
+            
+            <!-- Calendar Component -->
+            <!-- Add a hidden div to store the available dates JSON path for easier maintenance -->
+            <div id="availableDatesPath" class="sr-only" data-path="reservation-date/available-dates.json"></div>
+  
+            <!-- Ensure the calendar container has proper ARIA attributes for accessibility -->
+            <div id="calendar" class="reservation-calendar" aria-hidden="true" aria-label="Date selection calendar">
+              <div id="calendarHeader">
+                <button id="prevMonth" class="calendar-nav-btn" aria-label="Previous month">&lt;</button>
+                <span id="calendarMonth" class="calendar-month-display" aria-live="polite"></span>
+                <button id="nextMonth" class="calendar-nav-btn" aria-label="Next month">&gt;</button>
+              </div>
+              <table id="calendarTable" class="calendar-table" role="grid" aria-label="Calendar"></table>
+            </div>
+            
+            <p class="warning">Please select an available date.</p>
+        </div>
+        
+        <div class="form-group">
+          <label for="additionalQuestion">Additional Questions or Requests</label>
+          <textarea id="additionalQuestion" placeholder="Any questions or special requests?" rows="3"></textarea>
+        </div>
+        
+        <button type="button" id="submitBtn" class="cta-button primary">Submit Reservation</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeSuccessModal">&times;</span>
+      <div class="success-message">
+        <i class="fas fa-check-circle"></i>
+        <h3>Booking Confirmed!</h3>
+        <p>Thank you for your reservation. We've sent a confirmation email with all the details.</p>
+        <p>We look forward to sharing our cultural experience with you!</p>
+        <button class="cta-button primary" id="closeSuccessBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary Modal -->
+  <div id="summaryModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeSummaryModal">&times;</span>
+      <h2>Reservation Summary</h2>
+      <div id="summaryDetails"></div>
+      <div class="summary-actions">
+        <button onclick="saveReservation()" class="cta-button primary">Confirm Booking</button>
+        <button onclick="resetReservationForm()" class="cta-button secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>空つなぐ</h2>
+          <p>Authentic Japanese cultural experiences in Saku.</p>
+          <p>Connect with tradition, create lasting memories.</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Experiences</h3>
+            <ul>
+              <li><a href="#">Traditional Crafts</a></li>
+              <li><a href="#">Culinary Experiences</a></li>
+              <li><a href="#">Cultural Activities</a></li>
+              <li><a href="#">Group Bookings</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Artisans</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Location</a></li>
+              <li><a href="#">Partnerships</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Soratunagu. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed CTA -->
+  <div class="fixed-cta">
+    <a href="#" class="cta-button primary" id="fixedBookNow">
+      <i class="fas fa-calendar-alt"></i> Book Now
+    </a>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+  
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
